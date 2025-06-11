@@ -5,7 +5,15 @@ def main(): Unit =
   //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
   // to see how IntelliJ IDEA suggests fixing it.
   (1 to 5).map(println)
+  // ANSI 转义码定义
+  val RED = "\u001B[31m"
+  val GREEN = "\u001B[32m"
+  val YELLOW = "\u001B[33m"
+  val RESET = "\u001B[0m"
 
+  println(s"${RED}这是红色文本${RESET}")
+  println(s"${GREEN}这是绿色文本${RESET}")
+  println(s"${YELLOW}这是黄色文本${RESET}")
   for (i <- 1 to 5) do
     //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
     // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
