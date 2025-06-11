@@ -6,6 +6,7 @@ object Demo3 {
     val x = Tqdm.tqdm(100, "iterating",color =None,sleepSpeed = Some(50),colorRandom = true)
     for (i <- 0 until 100) {
       x.update(1)
+      println(i)
 //      Thread.sleep(100)
     }
   }

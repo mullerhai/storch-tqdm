@@ -99,11 +99,11 @@ class Tqdm[T]( var data: Iterator[T] ,
 
   def update(delta: Int): Unit = {
     progress += delta
-    println(s"update now first progress ${progress} ")
+//    println(s"update now first progress ${progress} ")
     if !sleepSpeed.isDefined || sleepSpeed.get <= 50 then Thread.sleep(50) else Thread.sleep(sleepSpeed.get)
     if (System.currentTimeMillis - lastPrintTime > printIntervalInMilli) {
       val speedString = formatSpeed(progress, lastProgress, System.currentTimeMillis - lastPrintTime)
-      println(s"update-> delta ${delta} lastProgress ${lastProgress} progress ${progress} total ${total} ")
+//      println(s"update-> delta ${delta} lastProgress ${lastProgress} progress ${progress} total ${total} ")
       val percent = 1.0 * progress / total * 100
       val percentString = String.format("%2d%%", percent.toInt)
       val usedTime = System.currentTimeMillis - beginTime
