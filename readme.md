@@ -12,6 +12,8 @@ Storch-Tqdm is a feature-rich progress bar library designed specifically for Sto
 This project uses SBT for dependency management. To compile the project, run the following command in the project root directory:
 ```bash
 sbt compile
+
+libraryDependencies += "io.github.mullerhai" % "storch-tqdm_3" % "0.0.2"
 ```
 
 ```scala 3

@@ -9,8 +9,8 @@ import Keys.*
 import sbt.Def.settings
 
 import scala.collection.Seq
-ThisBuild / version := "0.0.1"
-ThisBuild / tlBaseVersion := "0.0.1" // your current series x.y
+ThisBuild / version := "0.0.2"
+ThisBuild / tlBaseVersion := "0.0.2" // your current series x.y
 //ThisBuild / CoursierCache := file("D:\\coursier")
 ThisBuild / organization := "io.github.mullerhai" //"dev.storch"
 ThisBuild / organizationName := "storch.dev"
